@@ -10,11 +10,7 @@ class Solution {
         
         for(int i = 0; i<query.length; i++)
         {
-            if(i==0)
-            {
-                list.subList(query[0]+1, list.size()).clear();
-                
-            }else if(i%2==1)
+            if(i%2==1)
             {
                 list.subList(0,query[i]).clear();
             }else if(i%2==0)
