@@ -38,8 +38,6 @@ class Solution {
 
         if (list.size() > 1) {
             return -1; // 최빈값이 여러 개면 -1 반환
-        } else if (list.size() == 1) {
-            maxcount = list.get(0); // 최빈값의 등장 횟수 업데이트
         }
 
         count = 1;
