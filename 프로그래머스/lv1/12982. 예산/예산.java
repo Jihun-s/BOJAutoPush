@@ -4,11 +4,10 @@ class Solution {
         int answer = 0;
         Arrays.sort(d);
         for(int i:d){
-            if(budget-i>=0){
-                answer++;
-                budget -= i;
-            }else
+            if(budget-i<0)
                 break;
+            answer++;
+            budget -= i;
         }
         return answer;
     }
