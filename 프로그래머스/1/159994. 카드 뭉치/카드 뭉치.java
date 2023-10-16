@@ -6,12 +6,9 @@ class Solution {
         for(int i = 0; i<goal.length; i++){
             if(index1<cards1.length&&goal[i].equals(cards1[index1])) {
             	index1++;
-            	continue;
-            }
-			if(index2<cards2.length&&goal[i].equals(cards2[index2])) {
+            }else if(index2<cards2.length&&goal[i].equals(cards2[index2])) {
 				index2++;
-				continue;
-			}
+			}else
             answer = "No";
         }
         return answer;
